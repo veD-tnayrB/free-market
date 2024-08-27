@@ -1,0 +1,20 @@
+{
+	"name": "views/categories/list",
+	"platforms": ["web", "android", "ios"],
+	"widget": {
+		"route": "/categories",
+		"layout": "main-admin-layout",
+		"is": "page",
+		"ts": {
+			"path": "/widget/ts",
+			"files": ["*"]
+		},
+		"scss": {
+			"path": "/widget/scss",
+			"files": ["*"]
+		},
+		"element": {
+			"name": "categories-list"
+		}
+	}
+}

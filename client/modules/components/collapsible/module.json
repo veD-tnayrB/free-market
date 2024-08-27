@@ -1,0 +1,14 @@
+{
+	"name": "components/collapsible",
+	"platforms": ["web", "android", "ios"],
+	"code": {
+		"scss": {
+			"path": "/code/scss",
+			"files": ["*"]
+		},
+		"ts": {
+			"path": "/code/ts",
+			"files": ["*"]
+		}
+	}
+}

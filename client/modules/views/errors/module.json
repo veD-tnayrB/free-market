@@ -1,0 +1,23 @@
+{
+	"name": "views/errors",
+	"platforms": ["web", "android", "ios"],
+	"txt": {
+		"path": "/widget/txt",
+		"files": "*"
+	},
+	"widget": {
+		"route": "/error/${type}",
+		"is": "page",
+		"scss": {
+			"path": "/widget/scss",
+			"files": ["*"]
+		},
+		"ts": {
+			"path": "/widget/ts",
+			"files": ["*"]
+		},
+		"element": {
+			"name": "errors-view"
+		}
+	}
+}

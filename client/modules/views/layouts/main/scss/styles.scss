@@ -1,0 +1,20 @@
+.main-layout {
+	min-height: 100vh;
+	min-width: 100vw;
+	width: 100%;
+	display: flex;
+
+	.content {
+		background: var(--background);
+		padding: 1.25rem;
+	}
+
+	&:has(.main-layout-sidebar.collapsed) {
+		.content {
+		}
+	}
+
+	&:empty {
+		background: blue;
+	}
+}

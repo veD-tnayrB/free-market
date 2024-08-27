@@ -1,0 +1,57 @@
+.list-view {
+	.list-view-searchbar-container {
+		background: var(--surface);
+		border: 1px solid var(--outline);
+		width: 18rem;
+		padding: 0 0.5rem;
+		display: grid;
+		align-items: center;
+		grid-template-columns: 1.5rem 1fr 1.5rem;
+		border-radius: var(--border-tertiary);
+
+		.clear-button {
+			width: 1.5rem;
+			height: 1.5rem;
+			visibility: hidden;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			&.show {
+				visibility: visible;
+			}
+		}
+
+		svg {
+			width: 1.5rem;
+			height: 1.5rem;
+			stroke: var(--outline);
+		}
+
+		&:has(.pui-input.list-view-searchbar > input:focus) {
+			border: 1px solid var(--primary);
+
+			svg {
+				stroke: var(--primary);
+			}
+		}
+
+		div.pui-input.list-view-searchbar {
+			min-height: 0;
+			width: 100%;
+			input {
+				font-size: 0.9rem;
+				width: 100%;
+				background: var(--surface);
+				border-radius: 10px;
+				outline: transparent !important;
+				padding: 0.32rem 0.5rem;
+
+				&:focus {
+					border: 1px solid transparent;
+					outline: transparent;
+				}
+			}
+		}
+	}
+}

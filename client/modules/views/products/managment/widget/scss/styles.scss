@@ -1,0 +1,19 @@
+.products-page.managment-page {
+	.managment-form {
+		.img-container {
+			min-height: 10rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			.img {
+				min-height: 10rem;
+
+				img {
+					max-width: auto;
+					max-height: 10rem;
+				}
+			}
+		}
+	}
+}

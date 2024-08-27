@@ -1,0 +1,24 @@
+.currency-input {
+	.input-container {
+		background: var(--background);
+		border-radius: var(--border-tertiary);
+		border: 1px solid transparent;
+
+		.currency-indicator {
+			padding: 0.5rem 0.2rem;
+		}
+
+		.pui-input {
+			input {
+				&:focus-within {
+					border: none;
+					outline: none !important;
+				}
+			}
+		}
+
+		&:has(input:focus-within) {
+			border: 1px solid var(--primary) !important;
+		}
+	}
+}

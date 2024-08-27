@@ -1,0 +1,16 @@
+{
+	"name": "views/notifications/list",
+	"platforms": ["web", "android", "ios"],
+	"widget": {
+		"layout": "main-admin-layout",
+		"route": "/notifications",
+		"is": "page",
+		"ts": {
+			"path": "/widget/ts",
+			"files": ["*"]
+		},
+		"element": {
+			"name": "notifications-list"
+		}
+	}
+}

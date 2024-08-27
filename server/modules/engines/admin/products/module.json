@@ -1,0 +1,7 @@
+{
+	"name": "engines/products",
+	"ts": {
+		"path": "./",
+		"files": ["*"]
+	}
+}

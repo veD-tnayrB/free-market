@@ -1,0 +1,41 @@
+.products-list.list-page-container {
+	.list-view {
+		.list-container {
+			.row {
+				display: grid;
+				grid-template-columns: 1fr 75%;
+
+				.field {
+					padding: 0.5rem;
+				}
+
+				.description-field {
+					p {
+						display: block; /* or inline-block */
+						text-overflow: ellipsis;
+						word-wrap: break-word;
+						overflow: hidden;
+						max-height: 3.6em;
+						width: 100%;
+						font-size: 0.7rem;
+						line-height: 1.8em;
+					}
+				}
+
+				.image-field {
+					width: 100%;
+					img {
+						max-height: 10rem;
+						min-height: 10rem;
+
+						max-width: max-content;
+					}
+				}
+
+				.price-field {
+					color: var(--success);
+				}
+			}
+		}
+	}
+}

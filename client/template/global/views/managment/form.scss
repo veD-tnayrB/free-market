@@ -1,0 +1,27 @@
+.page-container.managment-page {
+	background: var(--surface);
+	box-shadow: var(--primary-shadow);
+	border-radius: 15px;
+	padding: 1.5rem 1.25rem;
+
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+
+	h1 {
+		font-size: 1.5rem;
+	}
+
+	.managment-form {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+
+		.actions {
+			display: flex;
+			align-content: center;
+			justify-content: flex-end;
+			gap: 1.5rem;
+		}
+	}
+}

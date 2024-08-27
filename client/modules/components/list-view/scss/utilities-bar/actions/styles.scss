@@ -1,0 +1,13 @@
+.list-view {
+	.actions-container {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+
+		.reports-container {
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+		}
+	}
+}

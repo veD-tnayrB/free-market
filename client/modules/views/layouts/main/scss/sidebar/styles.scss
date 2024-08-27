@@ -1,0 +1,65 @@
+.main-layout {
+	nav.main-layout-sidebar {
+		background: var(--surface);
+		height: 100%;
+		min-height: 100vh;
+		padding: 10px 0.5rem;
+		position: sticky;
+		top: 0;
+		left: 0;
+		box-shadow: var(--primary-shadow);
+
+		&:not(.collapsed) {
+			width: 225px;
+		}
+
+		.sidebar-content {
+			height: 97vh;
+			display: flex;
+			flex-direction: column;
+			gap: 2rem;
+
+			.sidebar-content-container {
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+
+				ul {
+					display: flex;
+					flex-direction: column;
+					gap: 0.5rem;
+				}
+
+				.sidebar-loading {
+					margin: -5rem 0 0 0;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					height: 100%;
+					width: 100%;
+
+					svg {
+						fill: var(--on-primary);
+						width: 20px;
+						height: 20px;
+						animation:
+							rotate 0.5s ease-in-out infinite 0s,
+							6s ease-in-out infinite -0.75s;
+					}
+				}
+			}
+		}
+	}
+}
+
+@-webkit-keyframes rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}

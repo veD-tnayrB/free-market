@@ -1,0 +1,20 @@
+{
+	"name": "views/users/list",
+	"platforms": ["web", "android", "ios"],
+	"widget": {
+		"layout": "main-admin-layout",
+		"route": "/users",
+		"is": "page",
+		"ts": {
+			"path": "/widget/ts",
+			"files": ["*"]
+		},
+		"element": {
+			"name": "users-list"
+		}
+	},
+	"txt": {
+		"path": "/widget/txt",
+		"files": "*"
+	}
+}

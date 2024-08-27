@@ -1,0 +1,58 @@
+.login-view.auth-view {
+	display: grid;
+	grid-template-columns: 60% 40%;
+
+	.right-section {
+		background: var(--primary);
+		position: relative;
+		display: flex;
+		align-items: center;
+
+		img {
+			position: absolute;
+
+			&.illustration-0 {
+				width: 950px;
+				bottom: 210px;
+				right: 50px;
+			}
+
+			&.illustration-1 {
+				width: 700px;
+				bottom: 220px;
+				right: 280px;
+			}
+
+			&.illustration-2 {
+				width: 520px;
+				bottom: 140px;
+				right: 200px;
+			}
+
+			&.illustration-3 {
+				width: 900px;
+				bottom: 200px;
+				right: 120px;
+			}
+		}
+	}
+
+	.background-section {
+		height: 100%;
+		min-height: 100vh;
+	}
+}
+
+@media (max-width: 1224px) {
+	.login-view.auth-view {
+		display: flex;
+		flex-direction: column-reverse;
+
+		.right-section {
+			display: none;
+			img {
+				display: none;
+			}
+		}
+	}
+}

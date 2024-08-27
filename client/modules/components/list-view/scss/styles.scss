@@ -1,0 +1,28 @@
+.list-view {
+	width: 100%;
+	display: grid;
+	gap: 20px;
+	background: var(--surface);
+	border-radius: 10px;
+
+	.list-container {
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+		border-bottom: 1px solid var(--outline);
+
+		&.default {
+			display: table;
+		}
+
+		&.fetching {
+			.essential-spinner {
+				position: absolute;
+				top: 45%;
+				left: 50%;
+				right: 50%;
+				bottom: 50%;
+			}
+		}
+	}
+}

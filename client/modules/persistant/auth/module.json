@@ -1,0 +1,8 @@
+{
+	"name": "auth",
+	"platforms": ["web", "android", "ios"],
+	"ts": {
+		"path": "./",
+		"files": ["*"]
+	}
+}

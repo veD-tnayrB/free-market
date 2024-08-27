@@ -1,0 +1,75 @@
+.registered-users-widget {
+	background: var(--surface);
+	box-shadow: var(--primary-shadow);
+	border-radius: var(--border-primary);
+	padding: 1.5rem 0.75rem;
+	min-width: 460px;
+	min-height: 315px;
+	height: 100%;
+
+	section.container {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		overflow-x: auto;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.year-handler {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 0.5rem;
+
+			button {
+				width: 36px;
+				min-height: 28px;
+				padding: 0 0.6rem;
+				background: var(--background);
+				border-radius: 5px;
+
+				.button-label {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+
+					svg {
+						fill: var(--on-surface);
+					}
+				}
+			}
+		}
+
+		canvas {
+			width: 100%;
+			max-height: 300px;
+		}
+
+		.empty {
+			max-height: 300px;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			font-size: 1.2rem;
+			font-weight: normal;
+			fill: var(--on-surface);
+
+			svg {
+				stroke-width: 1;
+				width: 45px;
+				height: 45px;
+			}
+
+			p {
+				width: 50%;
+				min-width: 400px;
+				text-align: center;
+			}
+		}
+	}
+}

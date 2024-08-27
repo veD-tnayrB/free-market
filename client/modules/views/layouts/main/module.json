@@ -1,0 +1,23 @@
+{
+	"name": "layout/main",
+	"platforms": ["web", "android", "ios"],
+	"widget": {
+		"is": "layout",
+		"element": {
+			"name": "main-admin-layout"
+		},
+		"scss": {
+			"path": "scss",
+			"files": ["*"]
+		},
+		"ts": {
+			"path": "ts",
+			"files": ["*"]
+		}
+	},
+	"txt": {
+		"path": "/txt",
+		"multilanguage": true,
+		"files": "*"
+	}
+}

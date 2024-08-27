@@ -1,0 +1,8 @@
+{
+	"name": "notifications",
+	"platforms": ["web", "android", "ios"],
+	"ts": {
+		"path": "./",
+		"files": ["*"]
+	}
+}

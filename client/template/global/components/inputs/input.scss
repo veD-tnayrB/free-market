@@ -1,0 +1,66 @@
+div.pui-input {
+	border-radius: var(--border-tertiary);
+	position: relative;
+	margin: 0;
+	transition: all 0.2s linear;
+	min-height: 38px;
+
+	input {
+		border: 1px solid transparent;
+		border-radius: var(--border-tertiary);
+		background: var(--background);
+		padding: 0.35rem 1rem;
+	}
+
+	.pui-input__label {
+		height: 100%;
+		position: absolute;
+		font-size: 0.85rem;
+		left: 0.5rem;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		text-transform: capitalize;
+		color: var(--text-color);
+		transition: all 0.2s ease-out;
+	}
+
+	&:focus-within .pui-input__label,
+	input:not(:placeholder-shown) ~ .pui-input__label {
+		background: transparent;
+		padding: 0;
+		left: 0.5rem;
+		color: var(--text-color);
+		transform: translateY(-35px);
+	}
+
+	&.fixed-label {
+		.pui-input__label {
+			height: 100%;
+			position: relative;
+			font-size: 0.85rem;
+			left: 0;
+			padding: 0;
+			display: flex;
+			align-items: center;
+			text-transform: capitalize;
+			color: var(--text-color);
+			transition: all 0.2s ease-out;
+		}
+
+		&:focus-within .pui-input__label,
+		input:not(:placeholder-shown) ~ .pui-input__label {
+			background: transparent;
+			padding: 0;
+			left: 0;
+			color: var(--text-color);
+			transform: translateY(0);
+		}
+	}
+
+	&.pui-input--password {
+		.icon-eye.icon-eye {
+			bottom: 0.65rem;
+		}
+	}
+}

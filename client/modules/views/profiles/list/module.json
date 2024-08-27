@@ -1,0 +1,16 @@
+{
+	"name": "views/profiles/list",
+	"platforms": ["web", "android", "ios"],
+	"widget": {
+		"route": "/profiles",
+		"layout": "main-admin-layout",
+		"is": "page",
+		"ts": {
+			"path": "/widget/ts",
+			"files": ["*"]
+		},
+		"element": {
+			"name": "profiles-list"
+		}
+	}
+}
