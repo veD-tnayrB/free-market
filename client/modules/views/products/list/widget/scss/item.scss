@@ -3,7 +3,8 @@
 		.list-container {
 			.row {
 				display: grid;
-				grid-template-columns: 1fr 75%;
+				width: 100%;
+				grid-template-columns: 1fr calc(85% - 60px) 60px;
 
 				.field {
 					padding: 0.5rem;

@@ -30,9 +30,8 @@ export const Row = ({ propertiesToDisplay, item }: IRow) => {
 	const onEdit = () => routing.pushState(`/products/managment/${item.id}`);
 	const displayEdit = permissions.has('products.update');
 	console.log('ITEM: ', item);
-	globalThis.a = item;
 	return (
-		<li className="row flex ">
+		<li className="row flex">
 			<span className="field image-field">
 				<Img src={item.img} alt={item.name} />
 			</span>
@@ -63,7 +62,8 @@ export const Row = ({ propertiesToDisplay, item }: IRow) => {
 								strokeWidth="2"
 								strokeLinecap="round"
 								strokeLinejoin="round"
-								className="lucide lucide-pencil-line">
+								className="lucide lucide-pencil-line"
+							>
 								<path d="M12 20h9" />
 								<path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z" />
 								<path d="m15 5 3 3" />
