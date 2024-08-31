@@ -15,18 +15,10 @@ export interface IPublish {
 export class Publish {
 	static model: typeof DB.models.Products = DB.models.Products;
 
-	static async handleCategories(productId: string, categories: string[], transaction) {
-		await DB.models.ProductsCategories.destroy({ where: { productId } });
-
-		const formatedCategories = categories.map((item) => ({ id: uuid(), categoryId: item, productId }));
-		await DB.models.ProductsCategories.bulkCreate(formatedCategories, { transaction });
-	}
-
 	static async create(params: IPublish) {
 		const transaction = await DB.sequelize.transaction();
 		try {
 			const product = await Publish.model.create(params, { transaction });
-			await Publish.handleCategories(params.id, params.categories, transaction);
 
 			await transaction.commit();
 			return { status: true, data: { id: params.id } };
@@ -41,7 +33,7 @@ export class Publish {
 		try {
 			const { id, ...productData } = params;
 			await Publish.model.update(productData, { where: { id }, transaction });
-			await Publish.handleCategories(id, params.categories, transaction);
+
 			await transaction.commit();
 			return { status: true, data: { id } };
 		} catch (error) {
