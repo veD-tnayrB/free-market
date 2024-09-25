@@ -23,6 +23,7 @@ export /*bundle*/ class Products extends Collection {
 			this.fetching = true;
 			if (!this.provider.generateReport) return;
 			const response = await this.provider.generateReport(params);
+			console.log('RESPONSE :', response);
 			const downloadExcelUrl = URL.createObjectURL(response);
 			return { status: true, data: downloadExcelUrl };
 		} catch (error) {
