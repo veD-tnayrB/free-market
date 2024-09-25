@@ -63,6 +63,7 @@ class ProductsRoutes extends Route {
 			if ((!response.status && 'error' in response) || !response.data) throw response.error;
 
 			const excelPath = path.join(__dirname, response.data.pathFile);
+			res.setHeader('Content-Type', 'text/html');
 			return res.sendFile(excelPath);
 		} catch (exc) {
 			console.error('Error /generate-report', exc);
@@ -78,6 +79,7 @@ class ProductsRoutes extends Route {
 			if ((!response.status && 'error' in response) || !response.data) throw response.error;
 
 			const excelPath = path.join(__dirname, response.data.pathFile);
+			res.setHeader('Content-Type', 'text/html');
 			return res.sendFile(excelPath);
 		} catch (exc) {
 			console.error('Error /get-template', exc);

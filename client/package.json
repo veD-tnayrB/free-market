@@ -95,6 +95,7 @@
 		"moment-timezone": "^0.5.45",
 		"npm-force-resolutions": "^0.0.10",
 		"perfect-scrollbar": "^1.5.5",
+		"pragmate-ui": "0.1.2",
 		"prismjs": "^1.29.0",
 		"react": "^18.2.0",
 		"react-chartjs-2": "^5.2.0",
