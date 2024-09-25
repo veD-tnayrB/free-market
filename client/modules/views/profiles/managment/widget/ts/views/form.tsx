@@ -39,10 +39,7 @@ export const Form = () => {
 	};
 
 	const onSubmit = async () => {
-		await store.save(values);
-		toast.success(store.item.id ? 'Profile updated successfully' : 'Profile created successfully');
-		routing.pushState('/profiles');
-		store.reset();
+		store.save(values);
 	};
 
 	const onCancel = () => {
