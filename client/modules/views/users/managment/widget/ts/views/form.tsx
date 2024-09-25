@@ -43,7 +43,7 @@ export const Form = () => {
 	const activeSwitchLabel = item.active ? 'Active' : 'Inactive';
 
 	const info =
-		item.password && !store.isCreating
+		item.password && !store.isCreating && !store.fetching
 			? `The user ${item.email} will receive an email notifying him about the change of his password and its value.`
 			: '';
 
