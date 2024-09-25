@@ -50,7 +50,7 @@ function View({ store }: { store: StoreManager }) {
 		actions: {
 			create: {
 				to: '/categories/managment/create',
-				label: 'Create',
+				label: 'Create ',
 			},
 			columnsSelector: {},
 			reports: {

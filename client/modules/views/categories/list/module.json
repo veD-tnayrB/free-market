@@ -9,10 +9,6 @@
 			"path": "/widget/ts",
 			"files": ["*"]
 		},
-		"scss": {
-			"path": "/widget/scss",
-			"files": ["*"]
-		},
 		"element": {
 			"name": "categories-list"
 		}
